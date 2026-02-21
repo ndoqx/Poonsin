@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านพูนสิน - ศาลพระภูมิและศาลโมเดิร์น อันดับ 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Kanit', sans-serif;
+        }
+        .text-gold {
+            color: #C5A059;
+        }
+        .bg-gold {
+            background-color: #C5A059;
+        }
+        .border-gold {
+            border-color: #C5A059;
+        }
+        .hover-gold:hover {
+            background-color: #B08D45;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        .hero-overlay {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <!-- Logo Placeholder -->
+                    <a href="#" class="flex-shrink-0 flex items-center gap-2">
+                        <div class="w-10 h-10 bg-gold rounded-full flex items-center justify-center text-white font-bold text-xl font-heading">พ</div>
+                        <div>
+                            <span class="font-heading font-bold text-2xl text-gray-800">ร้านพูนสิน</span>
+                            <p class="text-xs text-gold uppercase tracking-widest">Since 1964</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-gray-600 hover:text-gold transition font-medium">หน้าแรก</a>
+                    <a href="#about" class="text-gray-600 hover:text-gold transition font-medium">ความเป็นมา</a>
+                    <a href="#products" class="text-gray-600 hover:text-gold transition font-medium">สินค้าของเรา</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-gold transition font-medium">รีวิวลูกค้า</a>
+                    <a href="#services" class="text-gray-600 hover:text-gold transition font-medium">บริการ</a>
+                    <a href="#contact" class="px-5 py-2 bg-gold text-white rounded-full hover-gold transition shadow-lg font-medium">ติดต่อเรา</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i data-lucide="menu" class="w-8 h-8"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">หน้าแรก</a>
+            <a href="#about" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">ความเป็นมา</a>
+            <a href="#products" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">สินค้าของเรา</a>
+            <a href="#reviews" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">รีวิวลูกค้า</a>
+            <a href="#contact" class="block px-4 py-3 text-gold font-bold hover:bg-gray-50">ติดต่อเรา</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen min-h-[600px] flex items-center justify-center">
+        <!-- Background Image Placeholder -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://placehold.co/1920x1080/EEE/CCC?text=Beautiful+Modern+Spirit+House+Background" alt="ร้านพูนสิน ศาลพระภูมิ" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm tracking-widest mb-4">ผู้เชี่ยวชาญกว่า 60 ปี</span>
+            <h1 class="font-heading text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                ผสมผสานความศรัทธา <br>
+                <span class="text-gold">สู่งานดีไซน์ที่ลงตัว</span>
+            </h1>
+            <p class="text-gray-200 text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
+                จำหน่ายศาลพระภูมิ ศาลเจ้าที่ สไตล์โมเดิร์น และแบบดั้งเดิม พร้อมบริการติดตั้งครบวงจร โดยทีมงานมืออาชีพ
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#products" class="px-8 py-3 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg">
+                    ดูสินค้าแนะนำ
+                </a>
+                <a href="#contact" class="px-8 py-3 bg-gold text-white rounded-full font-semibold hover-gold transition shadow-lg border border-transparent">
+                    สอบถามราคา
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <!-- Image Grid -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://placehold.co/400x500/f3f4f6/C5A059?text=Owner+Installing" class="rounded-2xl shadow-xl w-full h-64 object-cover transform translate-y-8">
+                        <img src="https://placehold.co/400x500/f3f4f6/C5A059?text=Craftsmanship" class="rounded-2xl shadow-xl w-full h-64 object-cover">
+                    </div>
+                    <!-- Experience Badge -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-full shadow-2xl border-4 border-gold w-32 h-32 flex flex-col items-center justify-center text-center">
+                        <span class="font-heading font-bold text-3xl text-gold">60+</span>
+                        <span class="text-xs text-gray-500 font-semibold uppercase">Years Exp.</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="font-heading text-gold font-semibold text-lg mb-2 uppercase tracking-wide">เกี่ยวกับร้านพูนสิน</h2>
+                    <h3 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-6">ตำนานแห่งความศรัทธาที่ส่งต่อรุ่นสู่รุ่น</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        ร้านพูนสินดำเนินกิจการมาอย่างยาวนานกว่า 60 ปี เราเริ่มต้นจากการเป็นผู้เชี่ยวชาญด้านศาลพระภูมิแบบดั้งเดิม และได้พัฒนาฝีมือผสานเข้ากับยุคสมัยใหม่ จนเกิดเป็น "ศาลโมเดิร์น" ที่ตอบโจทย์บ้านและธุรกิจในปัจจุบัน
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        เราใส่ใจในทุกรายละเอียด ดูแลทุกขั้นตอนโดยเจ้าของร้านโดยตรง ตั้งแต่การเลือกแบบ การผลิต จนถึงการติดตั้ง เพื่อให้ลูกค้าได้รับสิ่งที่ดีที่สุด ทั้งความสวยงามและความเป็นสิริมงคล
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-gold mt-1 mr-3 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-heading font-semibold text-gray-900">คุณภาพที่เชื่อถือได้</h4>
+                                <p class="text-sm text-gray-500">วัสดุเกรดพรีเมียม แข็งแรง ทนทาน</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-lucide="heart-handshake" class="w-6 h-6 text-gold mt-1 mr-3 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-heading font-semibold text-gray-900">ดูแลโดยเจ้าของ</h4>
+                                <p class="text-sm text-gray-500">ใส่ใจทุกขั้นตอน บริการด้วยใจ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase -->
+    <section id="products" class="py-20 gold-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold font-heading font-semibold uppercase tracking-wider">Our Collections</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-2">ผลงานศาลพระภูมิและศาลโมเดิร์น</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">ตอบโจทย์ทุกความต้องการของบ้านและธุรกิจของคุณ ด้วยดีไซน์ที่หลากหลาย</p>
+            </div>
+
+            <!-- Categories Tabs (Visual only for this demo) -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 rounded-full bg-gold text-white shadow-lg font-medium">ทั้งหมด</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-600 hover:text-gold border border-gray-200 transition">ศาลโมเดิร์น</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-600 hover:text-gold border border-gray-200 transition">ศาลพระภูมิ/เจ้าที่</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-600 hover:text-gold border border-gray-200 transition">ศาลพระพรหม</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Modern -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://placehold.co/600x400/EEE/999?text=Modern+Spirit+House+1" alt="ศาลโมเดิร์น" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-gray-800 shadow">Best Seller</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">ชุดศาลพระภูมิโมเดิร์น ลักชัวรี่</h3>
+                        <p class="text-gray-500 text-sm mb-4">ดีไซน์เรียบหรู เข้ากับบ้านสไตล์ Modern & Minimal เน้นโทนสีขาวสะอาดตา</p>
+                        <a href="#contact" class="inline-flex items-center text-gold font-semibold hover:underline">
+                            สอบถามราคา <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Traditional -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://placehold.co/600x400/EEE/999?text=Traditional+Spirit+House" alt="ศาลแบบดั้งเดิม" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">ศาลพระภูมิทรงไทยประยุกต์</h3>
+                        <p class="text-gray-500 text-sm mb-4">ความงดงามตามแบบฉบับดั้งเดิม ลวดลายวิจิตรบรรจง ทรงคุณค่า</p>
+                        <a href="#contact" class="inline-flex items-center text-gold font-semibold hover:underline">
+                            สอบถามราคา <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Brahman -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://placehold.co/600x400/EEE/999?text=Brahman+Shrine" alt="ศาลพระพรหม" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">ศาลพระพรหม ขนาดใหญ่</h3>
+                        <p class="text-gray-500 text-sm mb-4">สำหรับกิจการ ธุรกิจ หรือบ้านขนาดใหญ่ เสริมบารมีและความเจริญรุ่งเรือง</p>
+                        <a href="#contact" class="inline-flex items-center text-gold font-semibold hover:underline">
+                            สอบถามราคา <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Ancestor -->
+                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://placehold.co/600x400/EEE/999?text=Ancestor+Shrine" alt="ศาลตายาย" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">ศาลตายาย / ศาลเจ้าที่</h3>
+                        <p class="text-gray-500 text-sm mb-4">มีทั้งแบบเรือนไทยและแบบโมเดิร์น จัดชุดเข้าคู่กับศาลพระภูมิได้อย่างลงตัว</p>
+                        <a href="#contact" class="inline-flex items-center text-gold font-semibold hover:underline">
+                            สอบถามราคา <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Product 5: Roman Style -->
+                 <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://placehold.co/600x400/EEE/999?text=Roman+Style" alt="ศาลโรมัน" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">ศาลสไตล์โรมัน</h3>
+                        <p class="text-gray-500 text-sm mb-4">โดดเด่นด้วยเสาโรมันและโดมที่สง่างาม เหมาะสำหรับคฤหาสน์หรู</p>
+                        <a href="#contact" class="inline-flex items-center text-gold font-semibold hover:underline">
+                            สอบถามราคา <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Product 6: Accessories -->
+                 <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://placehold.co/600x400/EEE/999?text=Accessories" alt="ของแต่งบ้านมงคล" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">ของแต่งบ้านมงคล</h3>
+                        <p class="text-gray-500 text-sm mb-4">ตุ๊กตาบริวาร ช้างม้า นางรำ ฉัตรเงินฉัตรทอง ครบครันสำหรับพิธีตั้งศาล</p>
+                        <a href="#contact" class="inline-flex items-center text-gold font-semibold hover:underline">
+                            สอบถามราคา <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900 text-white relative overflow-hidden">
+        <!-- Decoration background -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-gold opacity-10 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-gold opacity-10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white">บริการครบวงจรจากพูนสิน</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 border border-gray-700 rounded-2xl hover:border-gold transition duration-300 bg-gray-800/50">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+                        <i data-lucide="truck" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-heading">จัดส่งทั่วประเทศ</h3>
+                    <p class="text-gray-400">บริการขนส่งที่รวดเร็วและปลอดภัย มั่นใจได้ว่าศาลพระภูมิจะถึงมือท่านในสภาพสมบูรณ์</p>
+                </div>
+
+                <div class="p-8 border border-gray-700 rounded-2xl hover:border-gold transition duration-300 bg-gray-800/50">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+                        <i data-lucide="hammer" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-heading">ติดตั้งโดยมืออาชีพ</h3>
+                    <p class="text-gray-400">ทีมงานช่างผู้ชำนาญการ พร้อมติดตั้งให้ถูกต้องตามหลักวิศวกรรมและความสวยงาม</p>
+                </div>
+
+                <div class="p-8 border border-gray-700 rounded-2xl hover:border-gold transition duration-300 bg-gray-800/50">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6 text-white">
+                        <i data-lucide="message-square" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-heading">ให้คำปรึกษาฟรี</h3>
+                    <p class="text-gray-400">ให้คำแนะนำเรื่องทิศทาง รูปแบบ และขนาดที่เหมาะสมกับพื้นที่ โดยทีมงานและเจ้าของร้าน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facebook Reviews/Testimonials Section -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold font-heading font-semibold uppercase tracking-wider">Testimonials</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-2">เสียงตอบรับจากลูกค้า</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col h-full relative">
+                    <div class="absolute top-6 right-6 text-blue-600">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/100x100/EEE/999?text=User1" alt="User" class="w-12 h-12 rounded-full mr-4 border-2 border-white shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900 font-heading">คุณสมชาย ใจดี</h4>
+                            <div class="flex items-center text-gray-400 text-xs">
+                                <span>2 วันที่แล้ว</span>
+                                <span class="mx-1">•</span>
+                                <i data-lucide="globe" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-gray-700 leading-relaxed">"บริการดีมากครับ ให้คำแนะนำเรื่องทิศตั้งศาลละเอียดมาก ศาลสวยตรงปก งานจริงสีสวยกว่าในรูปอีกครับ ติดตั้งรวดเร็ว ประทับใจครับ"</p>
+                        <!-- Optional attached image placeholder -->
+                        <div class="mt-4 rounded-lg overflow-hidden h-40 bg-gray-100">
+                            <img src="https://placehold.co/300x200/f3f4f6/C5A059?text=Installed+House" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between text-gray-500 text-sm">
+                         <div class="flex items-center gap-1">
+                             <div class="bg-blue-500 rounded-full p-1 text-white"><i data-lucide="thumbs-up" class="w-3 h-3"></i></div>
+                             <span>12</span>
+                         </div>
+                         <div class="flex gap-4">
+                             <span>ถูกใจ</span>
+                             <span>ตอบกลับ</span>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col h-full relative">
+                    <div class="absolute top-6 right-6 text-blue-600">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/100x100/EEE/999?text=User2" alt="User" class="w-12 h-12 rounded-full mr-4 border-2 border-white shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900 font-heading">คุณนิดา สุขสมบูรณ์</h4>
+                            <div class="flex items-center text-gray-400 text-xs">
+                                <span>1 สัปดาห์ที่แล้ว</span>
+                                <span class="mx-1">•</span>
+                                <i data-lucide="globe" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-gray-700 leading-relaxed">"ขอบคุณร้านพูนสินมากค่ะ คุณสิงหะให้คำแนะนำดีมาก จากที่ไม่รู้เรื่องพิธีเลย ตอนนี้สบายใจมาก ศาลโมเดิร์นเข้ากับบ้านสุดๆ แขกมาบ้านชมทุกคนเลยค่ะ"</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between text-gray-500 text-sm">
+                        <div class="flex items-center gap-1">
+                            <div class="bg-blue-500 rounded-full p-1 text-white"><i data-lucide="heart" class="w-3 h-3"></i></div>
+                            <span>24</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <span>ถูกใจ</span>
+                            <span>ตอบกลับ</span>
+                        </div>
+                   </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col h-full relative">
+                    <div class="absolute top-6 right-6 text-blue-600">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/100x100/EEE/999?text=User3" alt="User" class="w-12 h-12 rounded-full mr-4 border-2 border-white shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900 font-heading">Somsak Construction</h4>
+                            <div class="flex items-center text-gray-400 text-xs">
+                                <span>3 สัปดาห์ที่แล้ว</span>
+                                <span class="mx-1">•</span>
+                                <i data-lucide="globe" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-gray-700 leading-relaxed">"สั่งทำศาลพระพรหมไปวางหน้าบริษัท งานจริงอลังการมากครับ วัสดุแข็งแรงทนทาน ขนส่งดูแลดี ไม่มีตำหนิเลยครับ ราคาสมเหตุสมผล ไว้มีโครงการหน้าจะมาอุดหนุนใหม่ครับ"</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between text-gray-500 text-sm">
+                        <div class="flex items-center gap-1">
+                            <div class="bg-blue-500 rounded-full p-1 text-white"><i data-lucide="thumbs-up" class="w-3 h-3"></i></div>
+                            <span>8</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <span>ถูกใจ</span>
+                            <span>ตอบกลับ</span>
+                        </div>
+                   </div>
+                </div>
+
+            </div>
+
+             <div class="text-center mt-12">
+                 <a href="https://www.facebook.com/share/16XBg3i9ou/?mibextid=wwXIfr" target="_blank" class="inline-flex items-center text-blue-600 font-semibold hover:underline">
+                    ดูรีวิวเพิ่มเติมบน Facebook <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & CTA Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-gray-100 to-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                <!-- Info Side -->
+                <div class="md:w-1/2 p-10 md:p-14">
+                    <span class="text-gold font-bold tracking-wider uppercase mb-2 block">Contact Us</span>
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-6">สนใจสอบถามและสั่งซื้อ</h2>
+                    <p class="text-gray-600 mb-8">
+                        เรามีทีมงานพร้อมให้คำแนะนำ เพื่อให้คุณได้ศาลพระภูมิที่ถูกใจและถูกต้องตามหลักมงคล
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">โทรสอบถาม (คุณสิงหะ)</p>
+                                <a href="tel:0818890173" class="text-xl font-bold text-gray-800 hover:text-gold">081-8890173</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.6.5.5 5.6.5 12c0 2.1.5 4.1 1.5 5.9l-1 5 5.1-1c1.7.9 3.6 1.4 5.9 1.4 6.4 0 11.5-5.1 11.5-11.5S18.4.5 12 .5z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">LINE ID</p>
+                                <a href="https://line.me/ti/p/~0611733389" target="_blank" class="text-xl font-bold text-gray-800 hover:text-gold">0611733389</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 mt-8">
+                            <a href="https://www.facebook.com/share/16XBg3i9ou/?mibextid=wwXIfr" target="_blank" class="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg text-center font-medium hover:bg-blue-700 transition flex items-center justify-center gap-2">
+                                <i data-lucide="facebook" class="w-5 h-5"></i> Facebook
+                            </a>
+                            <a href="#" class="flex-1 bg-pink-600 text-white py-3 px-4 rounded-lg text-center font-medium hover:bg-pink-700 transition flex items-center justify-center gap-2">
+                                <i data-lucide="instagram" class="w-5 h-5"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map/Image Side -->
+                <div class="md:w-1/2 bg-gray-200 relative min-h-[400px]">
+                     <img src="https://placehold.co/800x800/C5A059/FFFFFF?text=Map+or+Showroom+Photo" class="absolute inset-0 w-full h-full object-cover">
+                     <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                        <p class="font-bold text-lg">ร้านพูนสิน</p>
+                        <p class="text-sm opacity-90">ให้บริการจัดส่งและติดตั้งทั่วประเทศไทย</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-white text-2xl font-bold font-heading mb-4">ร้านพูนสิน</h3>
+                    <p class="mb-4 max-w-sm">ผู้เชี่ยวชาญด้านศาลพระภูมิและศาลโมเดิร์น ด้วยประสบการณ์ยาวนานกว่า 60 ปี เรามุ่งมั่นสร้างสรรค์งานศิลป์ที่เป็นมงคลคู่บ้านคุณ</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider text-gold">เมนูนำทาง</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-gold transition">หน้าแรก</a></li>
+                        <li><a href="#about" class="hover:text-gold transition">ความเป็นมา</a></li>
+                        <li><a href="#products" class="hover:text-gold transition">สินค้าของเรา</a></li>
+                        <li><a href="#reviews" class="hover:text-gold transition">รีวิวลูกค้า</a></li>
+                        <li><a href="#contact" class="hover:text-gold transition">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider text-gold">ติดต่อ</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i> 081-8890173 (สิงหะ)</li>
+                        <li class="flex items-center"><i data-lucide="message-circle" class="w-4 h-4 mr-2"></i> ID Line: 0611733389</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+                <p>&copy; 2024 ร้านพูนสิน (Poon Sin Spirit House). สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Icon Initialization
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.add('hidden'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
